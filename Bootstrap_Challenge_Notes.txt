@@ -1,0 +1,8 @@
+1. Review my site
+
+
+
+2. Research Boostrap components i could use
+
+
+3. - Cards buttons in homepage, Navbar for Navigation, Casurosal for picture gallery
