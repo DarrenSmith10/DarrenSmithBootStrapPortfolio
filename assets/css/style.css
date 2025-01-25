@@ -7,6 +7,26 @@ body {
     background: rgb(213, 212, 242, 0.66);
 }
 
+
+.bg-primary{
+    background-image: linear-gradient(to right, rgba(245, 239, 224, 1), rgb(237, 225, 197));
+    box-shadow: 1px 1px 10px 3px;
+}
+
+
+.card{
+    box-shadow: 1px 1px 10px 3px;
+}
+
+/* foooter */
+footer {
+    
+    background-color: #333;
+    color: white;
+    
+}
+
+/* ------- */
 header {
     padding: 20px 0;
 }
@@ -194,38 +214,31 @@ header {
 }
 
 /*Picture for About me Page */
-.profilePic {
-    display: flex;
-    justify-content: center;
-    
-    margin: 10px;
-    width: 250px;
+.image-fluid {
+    box-shadow: 1px 1px 10px 3px;
+    width: 300px;
     height: 300px;
-    border-radius: 50%;
+    
+
 }
 
 .AboutProjectPic1{
-    display: flex;
     
-    justify-content: center;
     
-    width: 300px;
+    width: 200px;
     height: 200px;
-    padding: 10px;
-    margin: 10px;
+    
 
 }
 .AboutProjectPic2{
-    display: flex;
-    justify-content: center;
-    width: 300px;
+   
+    width: 200px;
     height: 200px;
-    padding: 10px;
-    margin: 10px;
+   
 }
 
 /*Image Gallery for Projects Likely to be improved maybe with Bootstrap -------------- */
-.row {
+.Img-Gallery-row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
@@ -234,7 +247,7 @@ header {
 }
 
 /* Create four equal columns that sits next to each other */
-.column {
+.Img-Gallery-Col {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
@@ -357,7 +370,8 @@ input[type=submit]:hover {
     }
 }  
 /* Added a background color and some padding around the form */
-.container {
+
+.Form-container {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -366,7 +380,20 @@ input[type=submit]:hover {
     padding: 20px;
     box-shadow: 5px 5px 5px #aaaaaa;
 }
-/* foooter */
+
+
+/*.container {
+    
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 5px;
+    border-color: black;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}*/
+
+/* foooter 
 footer {
     display: flex;
     flex-direction: row;
@@ -376,4 +403,4 @@ footer {
     color: white;
     padding: 20px;
     max-width: 1700px;
-}
+}*/

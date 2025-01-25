@@ -66,23 +66,72 @@
         </div>
     </nav>
 
-    <!-- Banner -->
-    <main class ="Banner"></main>
-    <!-- Home Page Container and Image -->
-    <main class="HomeProjectAreaContainer"> 
-        <img class="HomeImgContainer" src="./assets/images/MonsterNormalnormal1.png" alt="Profile">
+     <!-- Main Content Section -->
+     <div class="container mt-4">
+      <header class="mb-4">
+          <h1 class="text-center">Welcome to My Portoflio</h1>
+      </header>
+
+      <div class="row">
+        <!-- Main Content -->
+        <main class="col-md-12 auto-mx bg-primary">
+            <h2 class ="text-center">Main Content</h2>
+            <img src="./assets/images/MonsterNormalnormal1.png" class="rounded mx-auto d-block" alt="..">
         <p class="paratext">“A structured and logical thinker with a keen interest in providing technical support and customer service. I have good programming skills and the ability to learn new softwares and tools and maintain high standards in order to achieve the best outcomes at all times.”</p>
-    </main>
-    <!-- Home Page Buttons -->
+        </main>
+    </div>
+  
+    <!-- Home Page Buttons --
     <main class="HomeButtonsContainer">
         <a href = "./about.html" ><div class="HomeButtons">About</div></a>
         <a href = "./projects.html" ><div class="HomeButtons">Projects</div></a>
         <a href = "./contact.html" ><div class="HomeButtons">Contact</div></a>
-    </main>
+    </main> -->
+
+    <!-- Card Buttons Test -->
+    
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <a href="/about.html">
+            <img src="./assets/images/ExtrinisticForCamera.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">About</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="/projects.html">
+            <img src="./assets/images/FinalImageJapaneseCloserView.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="contact.html">
+            <img src="./assets/images/photometricStereo_SurfaceMap.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Contact</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    
     <!-- Footer -->
-    <footer>
-        <p>© Darren Smith copyright 2025</p>
+    <footer class= "col-md-12 text-center py-3 mt-4">
+        <p>&copy; Darren Smith copyright 2025</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
