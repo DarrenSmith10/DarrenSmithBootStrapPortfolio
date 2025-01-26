@@ -1,15 +1,14 @@
 /* General Parameters */
-body {
+.bodyGen {
     font-family: "Lucida Console", "Courier New", monospace;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background: rgb(213, 212, 242, 0.66);
+    background: rgba(145,186,179);
 }
 
 
 .bg-primary{
-    background-image: linear-gradient(to right, rgba(245, 239, 224, 1), rgb(237, 225, 197));
+    background-image: linear-gradient(to right, rgba(153,193,178), rgb(170,204,184));
     box-shadow: 1px 1px 10px 3px;
 }
 
@@ -21,7 +20,7 @@ body {
 /* foooter */
 footer {
     
-    background-color: #333;
+    background-color: rgb(190,214,197);
     color: white;
     
 }
@@ -39,10 +38,7 @@ header {
 /* Flexbox navigation */
 .navbar {
    
-    display: flex;
-    justify-content: center;
-    background-color: rgba(68, 180, 92, 0.66);
-    padding: 10px;
+   
     box-shadow: 1px 1px 10px 3px;
 }
 
@@ -75,143 +71,9 @@ header {
     padding: 10px;
 }
 
-/*Banner added below the Naviation in Home Page */
-.Banner{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 10px auto;
-    padding: 90px;
-    background-image:url("../images/Background_Banner.png");
-    border: 1px solid #ccc;
-    max-width: 1200px;
-}
-
-/* Home Page Flexi containers --------------------------------------------- */
-
-.HomeProjectAreaContainer{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px auto;
-    padding: 150px;
-    background-image: linear-gradient(to right, rgba(245, 239, 224, 1), rgb(237, 225, 197));
-    border: 1px solid #ccc;
-    max-width: 1200px;
-}
-.HomeButtonsContainer{
-    display: flex;
-    flex-direction: row;
-    max-width: 1200px;
-    height: 500px;
-    margin: 20px auto;
-    padding: 95px;
-    background-image: linear-gradient(to right, rgba(245, 239, 224, 0), rgb(237, 225, 197, 0));
-    
-    /* Flexbox alignment properties */
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.HomeImgContainer{
-    display: flex;
-    justify-content: center;
-    
-    margin: 10px;
-    width: 300px;
-    height: 220px;
-    border-radius: 20%;
-    box-shadow: 1px 1px 10px 3px;
-}
-
-/* Buttons in the home page --------------------------------------- */
-.HomeButtons {
-    background-color: #04AA6D;
-    color: black;
-    padding: 110px;
-    margin: 10px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 25%;
-    box-shadow: 1px 1px 10px 3px;
-}
-
-/* Homepage buttons hover animation --------------------------------- */
-.HomeButtons:hover{
-    animation-name: stretch;
-    animation-duration: 3.5s; 
-    animation-timing-function: ease-out; 
-    animation-delay: 0.2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-play-state: running; 
-}
-
-@keyframes stretch {
-    0% {
-      transform: scale(1);
-      background-color: #04AA6D;
-      border-radius: 25%;
-    }
-    50% {
-      background-color: #97aa04;
-      border-radius: 50%;
-    }
-    100% {
-      transform: scale(1.5);
-      background-color: #aa0404;
-      border-radius: 100%;
-    }
-  }
 
 /*About Area -----------------------------------*/
 
-/* Flexi Containers for the Area Page */
-.AboutMePageContainer{
-    display: flex;
-
-    /*flex-wrap: wrap;*/
-}
-.AboutMePageSideContainer{
-    display: flex;
-
-    /* TODO: what happens when we change this? */
-    flex-direction: column;
-    width: 400px;
-    height: 1000px;
-    /*margin: 20px auto;
-    padding: 150px;*/
-    background-color: rgba(245, 239, 224, 1);
-
-    border: 2px solid #c4bfbf;
-
-    /* Flexbox alignment properties */
-    justify-content: space-around;
-    /* TODO: flex-start, center, space-between */
-    align-items: center;
-    /* TODO: flex-start, center, flex-end */
-}
-.AboutMyProjectsContainer{
-    display: flex;
-
-    /* TODO: what happens when we change this? */
-    flex-direction: column;
-    width: 1800px;
-    height: 1000px;
-    /*margin: 20px auto;
-    padding: 150px;*/
-    background-image: linear-gradient(to right, rgba(245, 239, 224, 1), rgb(237, 225, 197));
-    border: 2px solid #ccc;
-
-    /* Flexbox alignment properties */
-    justify-content: space-around;
-    /* TODO: flex-start, center, space-between */
-    align-items: center;
-    /* TODO: flex-start, center, flex-end */
-}
 
 /*Picture for About me Page */
 .image-fluid {
@@ -221,42 +83,16 @@ header {
     
 
 }
-
-.AboutProjectPic1{
-    
-    
-    width: 200px;
-    height: 200px;
+.image-fluid1 {
+    box-shadow: 1px 1px 10px 3px;
+    width: 600px;
+    height: 300px;
     
 
 }
-.AboutProjectPic2{
-   
-    width: 200px;
-    height: 200px;
-   
-}
 
-/*Image Gallery for Projects Likely to be improved maybe with Bootstrap -------------- */
-.Img-Gallery-row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  background-image: linear-gradient(to right, rgba(245, 239, 224, 1), rgb(237, 225, 197));
-  border: 2px solid black;
-}
 
-/* Create four equal columns that sits next to each other */
-.Img-Gallery-Col {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-  
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
+
 
 /*Contact Form -------------------------------------------------*/
 
@@ -369,38 +205,34 @@ input[type=submit]:hover {
         transform: translate(-150px, 0);
     }
 }  
-/* Added a background color and some padding around the form */
 
-.Form-container {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    border-color: black;
-    background-image: linear-gradient(to right, rgba(245, 239, 224, 1), rgb(237, 225, 197));
-    padding: 20px;
-    box-shadow: 5px 5px 5px #aaaaaa;
+
+/*animations  for home buttons working progress? 
+.HomeButtons:hover{
+    animation-name: stretch;
+    animation-duration: 3.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0.2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running; 
 }
 
-
-/*.container {
-    
-    display: flex;
-    flex-direction: column;
-    
-    border-radius: 5px;
-    border-color: black;
-    padding: 20px;
-    box-shadow: 5px 5px 5px #aaaaaa;
-}*/
-
-/* foooter 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    max-width: 1700px;
-}*/
+@keyframes stretch {
+    0% {
+      transform: scale(1);
+      background-color: #04AA6D;
+      border-radius: 25%;
+    }
+    50% {
+      background-color: #97aa04;
+      border-radius: 50%;
+    }
+    100% {
+      transform: scale(1.5);
+      background-color: #aa0404;
+      border-radius: 100%;
+    }
+  }
+*/
