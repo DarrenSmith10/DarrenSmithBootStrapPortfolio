@@ -52,7 +52,23 @@ header {
 
 .navbar a:hover {
     background-color: rgba(183, 229, 193, 0.3);
+    animation: mymove 5s infinite;  
 }
+
+@keyframes mymove { 
+    0%{
+    
+    }
+    25%{ transform: rotate(-90deg);
+
+    }
+    50% { transform: rotate(90deg);
+    }
+
+} 
+
+
+
 
 /*Nav Logo */
 
@@ -206,9 +222,23 @@ input[type=submit]:hover {
     }
 }  
 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
 
-/*animations  for home buttons working progress? 
-.HomeButtons:hover{
+    /* TODO: describe what these do */
+    main {
+        flex-direction: column;
+    }
+
+    .content-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/*animations  for home buttons working progress? */
+
+.card-body:hover{
     animation-name: stretch;
     animation-duration: 3.5s; 
     animation-timing-function: ease-out; 
@@ -219,20 +249,29 @@ input[type=submit]:hover {
     animation-play-state: running; 
 }
 
+.card:hover{
+    animation-name: stretch;
+    animation-duration: 3.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0.2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running; 
+}
 @keyframes stretch {
     0% {
       transform: scale(1);
-      background-color: #04AA6D;
-      border-radius: 25%;
+      
     }
     50% {
-      background-color: #97aa04;
-      border-radius: 50%;
+      
+      
     }
     100% {
       transform: scale(1.5);
-      background-color: #aa0404;
-      border-radius: 100%;
+      
+      
     }
   }
-*/
+
